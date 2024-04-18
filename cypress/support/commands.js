@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login',()=>{
+        cy.visit("https://admin-demo.nopcommerce.com/")
+        cy.get('[type="submit"]').click();
+})
+
+Cypress.Commands.add('searchForAProduct',()=>{
+        cy.get(".nav-link").contains("Catalog").click({force: true})
+        cy.get('[href="/Admin/Product/List"]').click({force:true})
+        cy.get("#SearchProductName").type("laptop123",{force:true})
+        cy.get("#search-products").click({force:true})
+
+})

@@ -1,4 +1,5 @@
+task1.cy.js
 node_modules
-cypress.config.js
 package-lock.json
 package.json
+screenshots
