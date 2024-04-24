@@ -1,5 +1,4 @@
-task1.cy.js
+describe_it
 node_modules
-package-lock.json
-package.json
 screenshots
+package-lock.json
